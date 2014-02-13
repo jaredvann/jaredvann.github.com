@@ -16,12 +16,25 @@ h1 {
   color: white;
   font: 148px Pacifico, serif;
   text-align: center;
-}
 
-
-
-header {
   position: relative;
   width:100%;
-  top:100px;
+  top:50px;
 }
+
+.navbar {
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+}
+
+.navbar a:hover {
+  color: #FFA126;
+}
+
+.navbar-brand {
+  color: white;
+  font: 28px Pacifico, serif;
+  padding-top: 0;
+  margin-top: -4px;
+}
+
