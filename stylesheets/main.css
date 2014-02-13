@@ -2,39 +2,54 @@
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 
 body {
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  background: url(../images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 
 h1 {
-  color: white;
-  font: 112px Pacifico, serif;
-  text-align: center;
-
-  position: relative;
-  width:100%;
-  top:100px;
+	color: white;
+	font: 112px Pacifico, serif;
 }
 
 .navbar {
-  background-color: rgba(0,0,0,0.5);
-  border: none;
+	background-color: rgba(0,0,0,0.5);
+	border: none;
+}
+
+.navbar a {
+	color: #FFA126;
 }
 
 .navbar a:hover {
-  color: #FFA126;
+	font-style: italic;
 }
 
 .navbar-brand {
-  color: white;
-  font: 28px Pacifico, serif;
-  padding-top: 0;
-  margin-top: -4px;
+	color: white;
+	font: 28px Pacifico, serif;
+	padding-top: 0;
+	margin-top: -4px;
 }
 
+.content {
+	text-align: center;
+
+	position: relative;
+	width:100%;
+	top:100px;
+}
+
+
+
+
+@media only screen and (max-device-width: 480px) {
+	h1 {
+		font: 48px Pacifico, serif;
+	}
+}
