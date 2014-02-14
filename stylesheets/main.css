@@ -14,7 +14,13 @@ body {
 
 h1 {
 	color: white;
-	font: 112px Pacifico, serif;
+	font: 148px Pacifico, serif;
+	padding-bottom: 50px;
+}
+
+h1:hover {
+	color: #FFA126;
+	cursor: pointer;
 }
 
 .navbar {
@@ -26,9 +32,9 @@ h1 {
 	color: #FFA126;
 }
 
-.navbar a:hover {
+/*.navbar a:hover {
 	font-style: italic;
-}
+}*/
 
 .navbar-brand {
 	color: white;
@@ -42,7 +48,7 @@ h1 {
 
 	position: relative;
 	width:100%;
-	top:100px;
+	top:30px;
 }
 
 
