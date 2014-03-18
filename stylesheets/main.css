@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
 
 body {
-	font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 	background: url(../images/bg.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -14,8 +13,9 @@ body {
 
 h1 {
 	color: white;
-	font: 148px Pacifico, serif;
+	font: 180px Amatic SC, serif;
 	padding-bottom: 50px;
+	letter-spacing: 40px;
 }
 
 /*h1:hover {
