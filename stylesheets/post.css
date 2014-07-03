@@ -1,0 +1,25 @@
+
+
+
+
+
+
+h3 {
+    font-size: 64px;
+    color: white;
+    padding-top: 120px;
+}
+
+
+
+.blogtitle {
+    background-image: url(../images/c.jpg);
+    
+    
+    height: 300px;
+    border-radius: 5px;
+    
+    text-align: center;
+    
+    margin-bottom: 10px;
+}
