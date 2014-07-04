@@ -1,0 +1,85 @@
+body {
+  color: #2e313d;
+  font: 20px Gentium Book Basic, serif;
+  line-height: 1.7;
+  background-color: #fafafa; }
+
+a {
+  color: #2e313d;
+  text-decoration: underline; }
+
+a:hover {
+  color: #fafafa;
+  background-color: #2e313d;
+  text-decoration: underline; }
+
+h1 {
+  font: 72px Open Sans, serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px; }
+  h1 a {
+    text-decoration: none; }
+  h1 a:hover {
+    color: #2e313d;
+    background-color: #fafafa;
+    text-decoration: none; }
+
+h3 {
+  font: 36px Gentium Book Basic, serif;
+  font-weight: bold;
+  text-align: center; }
+  h3 a {
+    color: #2e313d;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px; }
+  h3 a:hover {
+    color: #2e313d;
+    background-color: #eeeeee;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px; }
+
+hr {
+  border-color: #999999;
+  border-style: dotted; }
+
+article {
+  padding-bottom: 200px; }
+
+footer {
+  color: #999999;
+  font: 16px Gentium Book Basic, serif;
+  text-align: center;
+  padding: 30px 0; }
+  footer a {
+    color: #999999; }
+  footer a:hover {
+    color: #fafafa;
+    background-color: #999999; }
+
+.top_bar {
+  background-color: transparent;
+  height: 7px;
+  width: 100%;
+  position: static;
+  top: 0;
+  z-index: 3; }
+
+.meta {
+  color: #999999;
+  font: 16px Gentium Book Basic, serif;
+  text-align: center;
+  padding: 15px 0; }
+
+.post-meta {
+  color: #999999;
+  font: 16px Gentium Book Basic, serif;
+  text-align: center;
+  padding: 15px 0; }
+  .post-meta a {
+    color: #999999; }
+  .post-meta a:hover {
+    color: #fafafa;
+    background-color: #999999; }
