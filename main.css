@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada:700);
+
+
+
+body{
+
+    margin: 0;
+
+    background-color: #ED4264;
+    
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: white;
+    margin-top: 20%;
+    font-size: 150px;
+}
+
+h1:hover{
+    color: #ED4264;
+    background-color: white;
+    cursor: crosshair;
+}
+
+
