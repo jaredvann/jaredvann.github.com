@@ -14,15 +14,11 @@ h1{
     width: 100%;
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
-    color: white;
+    color: #DDD;
     margin-top: 20%;
     font-size: 150px;
 }
 
-h1:hover{
-    color: #ED4264;
-    background-color: white;
-    cursor: crosshair;
-}
+
 
 
