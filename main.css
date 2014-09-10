@@ -19,6 +19,8 @@ h1{
     font-size: 150px;
 }
 
-
+::selection {
+    background: #FFF; /* WebKit/Blink Browsers */
+}
 
 
