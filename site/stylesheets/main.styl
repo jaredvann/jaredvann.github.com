@@ -1,0 +1,84 @@
+
+bg-color = #EBEBEB
+key-color-1 = #78bcf9
+
+body
+	padding 0
+	margin 0
+
+	font-family 'Open Sans', sans-serif
+
+h1
+	color key-color-1
+
+
+logo-size = 200px
+
+header
+	position relative
+	left 50%
+	width logo-size
+	margin-left -(logo-size/2)
+
+	text-align center
+
+header img
+	width logo-size
+	height logo-size
+
+
+.navbar
+	z-index 2
+	background-color rgba(255,255,255,0.8)
+	border-radius 0
+
+	margin 0
+
+.navbar-brand
+	font-weight 600
+
+.navbar li
+	padding 5px 0
+
+.navbar li:hover
+	background-color key-color-1
+
+.navbar li:hover a
+	color white
+
+.navbar-default .navbar-nav>li>a:hover
+	color white
+
+
+
+@media (max-width: 768px)
+	header img
+		width (logo-size*0.7)
+		height (logo-size*0.7)
+
+
+@media (min-width: 768px)
+	.navbar
+		width 100%
+
+		border none
+
+		margin 0
+
+		text-transform uppercase
+		font-weight 600
+		font-size 1.2em
+
+		text-align center
+
+	.navbar .navbar-nav
+		display inline-block
+		float none
+		vertical-align top
+
+	.navbar-brand
+		display none
+
+.carousel
+	z-index 1
+

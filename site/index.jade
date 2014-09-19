@@ -1,0 +1,111 @@
+doctype html
+html(lang='en')
+	head
+		title Vitro Custom
+
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		//- External stylesheets
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300')
+
+		//- Internal stylesheets
+		link(rel='stylesheet', href='stylesheets/main.css')
+
+	body
+		header
+			img(src='img/logo-big.png', alternate='Vitro Glassware')
+
+		nav.navbar.navbar-default
+			.container-fluid
+				.navbar-header
+					a.navbar-brand VITRO GLASSWARE
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-1')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+
+				.collapse.navbar-collapse#navbar-collapse-1
+					ul.nav.navbar-nav
+						li: a(href='/') Home
+						li: a(href='/about') About
+						li: a(href='/products') Products
+						li: a(href='/service') Service
+						li: a(href='/contact') Contact
+
+		.carousel.slide#carousel(data-ride='carousel')
+			ol.carousel-indicators
+				li.active(data-target='#carousel', data-slide-to='0')
+				li(data-target='#carousel', data-slide-to='0')
+				li(data-target='#carousel', data-slide-to='0')
+
+			.carousel-inner
+				.item.active
+					img(src='img/ph1.png', alt='...')
+					.carousel-caption
+						| Image Description
+
+				.item
+					img(src='img/ph2.png', alt='...')
+					.carousel-caption
+						| Image Description
+
+				.item
+					img(src='img/ph3.png', alt='...')
+					.carousel-caption
+						| Image Description
+
+			a.left.carousel-control(href='#carousel', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left
+			a.right.carousel-control(href='#carousel', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right
+
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+
+
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+
+		script(src='js/stickUp.min.js')
+
+		script(type='text/javascript').
+			//initiating jQuery
+			jQuery(function($) {
+				$(document).ready( function() {
+					if (window.innerWidth > 768) {
+						//enabling stickUp on the '.navbar-wrapper' class
+						$('nav.navbar').stickUp();
+					};
+					
+				});
+			});
+
+
+
