@@ -4,33 +4,80 @@
 		<meta charset="utf-8">
 		<title>vann.me</title>
 
+
+
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
         <LINK rel="stylesheet" href="main.css">
 
-<!--         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<LINK rel="stylesheet" href="onepage-scroll.css">
 
-        <script type="text/javascript" src="main.js"></script> -->
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="jquery.onepage-scroll.min.js"></script>
 
 	</head>
 
 	<body>
 
-		<div id="div2">
+		<div class="main">
 
-			<h1>VANN.ME</h1>
+			<section>
 
-			<div id="div">
+				<div id="div2">
 
-				<audio controls autoplay>
-					<source src="audio.m4a" type="audio/mpeg">
-					Your browser does not support the audio element.
-				</audio>
+					<h1>VANN.ME</h1>
 
-			</div>
+					<div id="div">
+
+						<audio controls autoplay>
+							<source src="audio.m4a" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- <section>
+
+				<nav class="navbar navbar-default navbar" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="">VANN.ME</a>
+						</div>
+
+					</div>
+				</nav>
 
 
+
+			</section> -->
 
 		</div>
 
+		<!--<script type="text/javascript">
+
+			$(".main").onepage_scroll({
+			   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+			   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+			                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+			   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+			   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+			   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+			   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+			   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+			   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+			   keyboard: true,                  // You can activate the keyboard controls
+			   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+			                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+			                                    // the browser's width is less than 600, the fallback will kick in.
+			   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
+			});
+
+		</script>-->
 
 
 
