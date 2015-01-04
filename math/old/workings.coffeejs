@@ -1,0 +1,125 @@
+
+symbols = {}
+
+symbol = (id, nud, lbp, led) ->
+	sym = symbols[id] || {}
+	symbols[id] = {
+		lbp: sym.lbp || lbp
+		nud: sym.nud || nud
+		led: sym.lef || led
+	}
+
+interpretToken = (token) ->
+	sym = Objects.create symbols[token.type]
+	sym.type = token.type
+	sym.value = token.value
+	return sym
+
+i = 0
+token = () -> interpretToken tokens[i]
+advance = () -> i++; return token()
+
+
+expression = (rbp) ->
+	t = token()
+	advance()
+	if !t.nud then throw "Unexpected token: " + t.type;
+	left = t.nud(t)
+	while rbp < token().lbp
+		t = token()
+		advance()
+		if !t.led then throw "Unexpected token: " + t.type
+		left = t.led(left)
+	return left
+
+
+infix = (id, lbp, rdp, led) ->
+	rbp = rbp || lbp
+	symbol id, null, lbp, led || (left) ->
+		return {
+			type: id
+			left: left
+			right: expression(rbp)
+		}
+
+prefix = (id, rdp) ->
+	symbol id, () ->
+		return {
+			type: id
+			right: expression(rbp)
+		}
+
+
+prefix("-", 7)
+infix("^", 6, 5)
+infix("*", 4)
+infix("/", 4)
+infix("%", 4)
+infix("+", 3)
+infix("-", 3)
+
+symbol(",")
+symbol(")")
+symbol("(end)")
+
+
+symbol '(', () ->
+	value = expression 2
+	if token().type !== ')' then throw "Expected closing parenthesis ')'"
+	advance()
+	return value
+
+symbol 'number', (number) ->
+	return number
+
+
+symbol 'identifier', (name) ->
+	if token().type === '('
+		args = []
+		if tokens[i+1].type === ')' then advance()
+		else
+			do
+				advance()
+				args.push expression 2
+			while token().type === ','
+			if token().type !== ')' then throw "Expected closing parenthesis ')'"
+		advance()
+		return {
+			type: 'call'
+			args: args
+			name: name.value
+		}
+	return name
+
+infix '=', 1, 2, (left) ->
+	if left.type === 'call'
+		for i in left.args.length
+			if left.args[i].type !== 'identifier' then throw 'Invalid argument name'
+		return {
+			type: 'function'
+			name
+		}
+
+
+
+infix("=", 1, 2, function (left) {
+    if (left.type === "call") {
+      for (var i = 0; i < left.args.length; i++) {
+        if (left.args[i].type !== "identifier") throw "Invalid argument name";
+      }
+      return {
+        type: "function",
+        name: left.name,
+        args: left.args,
+        value: expression(2)
+      };
+    } else if (left.type === "identifier") {
+      return {
+        type: "assign",
+        name: left.value,
+        value: expression(2)
+      };
+    }
+    else throw "Invalid lvalue";
+});
+
