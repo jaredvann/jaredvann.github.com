@@ -1,7 +1,10 @@
 /*@import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada:700);*/
 
+/*@import url(http://fonts.googleapis.com/css?family=Archivo+Black);*/
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900);
+
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:100);*/
 body{
 
     margin: 0;
@@ -15,10 +18,12 @@ body{
 }
 
 .masked{  
-    background: url(bg2.jpg) repeat, white;	
+    background: url(bg.jpg) repeat, white;	
+    background-size: cover;
+    background-position: center;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-	-webkit-animation-name: masked-animation;
+/*	-webkit-animation-name: masked-animation;*/
 	-webkit-animation-duration: 30s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
@@ -31,12 +36,10 @@ body{
 h1{
     width: 100%;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium Web', Arial Black, sans-serif;
     color: #333;
     margin-top: 0;
-    font-size: 200px;
-
-    font-weight: bold;
+    font-size: 20vw;
     
     
 }
@@ -51,6 +54,7 @@ h1{
 }
 
 #div {
+    padding-top: 10vw;
     text-align: center;
     opacity: 0.5;
 }
@@ -92,14 +96,69 @@ h1{
 }
 
 
+ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+}
+ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #FFF;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: #EBEBEB;
+  color: #FFF;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: #CCC; 
+  display: block; 
+  color: #FFF;
+}
+ul li ul li:hover { background: #AAA; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .navbar{
-    background-color: #666;
+    background-color: transparent;
 
+    border: none;
     border-radius: 0;
     margin: 0;
 
-    color: white;
 
 }
 
