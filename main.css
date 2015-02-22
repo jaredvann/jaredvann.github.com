@@ -8,21 +8,37 @@ body{
 
     height: 100%;
 
-    /*background-color: #EBEBEB;*/
+/*    background-color: #EBEBEB;*/
 
 
 
 }
 
+.masked{  
+    background: url(bg2.jpg) repeat, white;	
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-animation-name: masked-animation;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes masked-animation {
+	0% {background-position: left top;}
+	100% {background-position: right top;}
+}
+
 h1{
     width: 100%;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: Arial, sans-serif;
     color: #333;
     margin-top: 0;
     font-size: 200px;
 
-    font-weight: 100;
+    font-weight: bold;
+    
+    
 }
 
 /*h1:hover {
@@ -39,6 +55,7 @@ h1{
     opacity: 0.5;
 }
 
+
 #div2{
 
     padding-top: 15%;
@@ -50,6 +67,7 @@ h1{
     left: 0;
     right: 0;
 
+/*
     background:
     linear-gradient(
         limegreen,
@@ -65,8 +83,12 @@ h1{
         coral,
         transparent
     );
+*/
+/*
+    
 
     background-blend-mode: screen;
+*/
 }
 
 
