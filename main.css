@@ -17,20 +17,12 @@ body{
 
 }
 
-.masked{  
-    background: url(bg.jpg) repeat, white;	
-    background-size: cover;
-    background-position: center;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-/*	-webkit-animation-name: masked-animation;*/
-	-webkit-animation-duration: 30s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
+a:hover{
+    text-decoration: none;
 }
-@-webkit-keyframes masked-animation {
-	0% {background-position: left top;}
-	100% {background-position: right top;}
+
+.masked{
+    
 }
 
 h1{
@@ -41,16 +33,26 @@ h1{
     margin-top: 0;
     font-size: 20vw;
     
-    
+    background: url(bg.jpg) repeat, white;	
+    background-size: cover;
+    background-position: center;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;  
 }
 
-/*h1:hover {
-    font-weight: 400;
-    cursor: crosshair;
-}*/
+
+h1:hover {
+    background: url(bg.jpg) repeat, white;	
+    background-size: cover;
+    background-position: center;
+    
+	-webkit-text-fill-color: white;
+}
+
+
 
 ::selection {
-    background: #777;
+    background: pink;
 }
 
 #div {
