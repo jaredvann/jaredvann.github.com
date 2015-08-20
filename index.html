@@ -1,93 +1,61 @@
 <!doctype html>
+
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>vann.me</title>
 
+    <head>
+        <meta charset="utf-8">
 
+        <title>vann.me</title>
 
-		 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
-        
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="bootstrap.min.css">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <LINK rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css">
 
-		<LINK rel="stylesheet" href="onepage-scroll.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
 
-		<script type="text/javascript" src="jquery.onepage-scroll.min.js"></script>
+    </head>
 
-	</head>
-
-	<body>
-
-		<div class="main">
-
-			<section>
-
-				<div id="div2">
-
-					<a href="https://twitter.com/jared_vann"><h1>VANN.ME</h1></a>
-                    
-					<div id="div">
-
-						<audio controls autoplay>
-							<source src="touched.m4a" type="audio/mpeg">
-							Your browser does not support the audio element.
-						</audio>
-
-					</div>
-
-				</div>
-
-			</section>
-
-			 <section>
-
-<!--
-				<nav>
-					<ul>
-                        <li>
-                            <i class="fa fa-bars"></i>
-                            <ul>
-                                <li>Twitter</li>
+    <body>
+        <div class="container"><div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand">VANN.ME</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="https://www.facebook.com/jaredvann" title="Facebook"><i class="fa fa-facebook-official"></i><span class="navbar-label">Facebook</span></a></li>
+                                <li><a href="https://instagram.com/jrdvnn/" title="Instagram"><i class="fa fa-instagram"></i><span class="navbar-label">Instagram</span></a></li>
+                                <li><a href="https://github.com/jaredvann" title="Github"><i class="fa fa-github"></i><span class="navbar-label">Github</span></a></li>
                             </ul>
-                        </li>
-                    </ul>
-				</nav>
--->
+                        </div>
+                    </div>
+                </nav>
 
+                <div id="content">
 
+                    <a><h1>VANN.ME</h1></a>
 
-			</section> 
+                    <audio controls autoplay>
+    					<source src="audio.m4a" type="audio/mpeg">
+    					Your browser does not support the audio element.
+    				</audio>
 
-		</div>
+                </div>
+            </div>
+        </div></div>
 
-		<!--<script type="text/javascript">
-
-			$(".main").onepage_scroll({
-			   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-			   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-			                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-			   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
-			   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-			   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-			   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-			   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-			   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-			   keyboard: true,                  // You can activate the keyboard controls
-			   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-			                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-			                                    // the browser's width is less than 600, the fallback will kick in.
-			   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
-			});
-
-		</script>-->
-
-
-
-	</body>
+    </body>
 
 </html>

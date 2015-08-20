@@ -2,169 +2,98 @@
 
 /*@import url(http://fonts.googleapis.com/css?family=Archivo+Black);*/
 
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:700,900);
+
+/* latin */
+/*@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Titillium WebBlack'), local('TitilliumWeb-Black'), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr38V1Ceyva9e1TrsMaWAC_w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}*/
 
 /*@import url(http://fonts.googleapis.com/css?family=Raleway:100);*/
-body{
 
+body {
     margin: 0;
 
     height: 100%;
 
-/*    background-color: #EBEBEB;*/
+    background-color: #EBEBEB;
 
+    font-family: 'Helvetica', sans-serif;
+    color: #CCC;
 
-
+    text-align: center;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-.masked{
-    
-}
-
-h1{
+h1 {
     width: 100%;
     text-align: center;
+    font-weight: 900;
     font-family: 'Titillium Web', Arial Black, sans-serif;
     color: #333;
-    margin-top: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
     font-size: 20vw;
-    
-    background: url(bg.jpg) repeat, white;	
+
+    background: url(bg.jpg) repeat, white;
     background-size: cover;
     background-position: center;
 	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;  
+	-webkit-background-clip: text;
+}
+
+@media (min-width: 768px) {
+    .navbar-label {
+        display: none;
+    }
+}
+
+@media (min-width: 1300px) {
+    h1 {
+        font-size: 15vw;
+    }
 }
 
 
-h1:hover {
-    background: url(bg.jpg) repeat, white;	
-    background-size: cover;
-    background-position: center;
-    
-	-webkit-text-fill-color: white;
+@media (min-width: 1800px) {
+    h1 {
+        font-size: 10vw;
+    }
 }
-
-
 
 ::selection {
     background: pink;
 }
 
-#div {
-    padding-top: 10vw;
-    text-align: center;
-    opacity: 0.5;
-}
 
-
-#div2{
-
-    padding-top: 15%;
-
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-/*
-    background:
-    linear-gradient(
-        limegreen,
-        transparent
-    ),
-    linear-gradient(
-        90deg,
-        skyblue,
-        transparent
-    ),
-    linear-gradient(
-        -90deg,
-        coral,
-        transparent
-    );
-*/
-/*
-    
-
-    background-blend-mode: screen;
-*/
-}
-
-
-ul {
-  text-align: left;
-  display: inline;
-  margin: 0;
-  padding: 15px 4px 17px 0;
-  list-style: none;
-}
-ul li {
-  font: bold 12px/18px sans-serif;
-  display: inline-block;
-  margin-right: -4px;
-  position: relative;
-  padding: 15px 20px;
-  background: #FFF;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-ul li:hover {
-  background: #EBEBEB;
-  color: #FFF;
-}
-ul li ul {
-  padding: 0;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 150px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-}
-ul li ul li { 
-  background: #CCC; 
-  display: block; 
-  color: #FFF;
-}
-ul li ul li:hover { background: #AAA; }
-ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-
-.navbar{
-    background-color: transparent;
-
+.navbar {
+    background-color: #EBEBEB;
     border: none;
-    border-radius: 0;
-    margin: 0;
-
-
 }
 
-.navbar-brand{
-    font-family: 'Raleway', sans-serif;
-    color: white;
+.navbar .container {
+    border-bottom: 1px solid #CCC;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-family: 'Titillium Web', Arial Black, sans-serif;
+    color: #CCC;
+}
+
+.navbar-label {
+    padding-left: 10px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.fa {
+    font-size: 150%;
 }
