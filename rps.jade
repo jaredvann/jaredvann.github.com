@@ -1,0 +1,26 @@
+extends layout.jade
+
+block js
+    script(src='rps.js')
+
+block content
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+        .modal-dialog(role='document')
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') &times;
+                    h4#r.modal-title
+                .modal-body
+                    table.rps-table
+                        tr
+                            td You
+                            td Computer
+                        tr
+                            td#a.ico
+                            td#b.ico
+    
+    .btn-group.rps
+        a: i#rock.fa.fa-hand-rock-o
+        a: i#paper.fa.fa-hand-paper-o
+        a: i#scissors.fa.fa-hand-scissors-o

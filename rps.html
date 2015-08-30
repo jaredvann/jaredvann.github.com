@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="rps.js"></script>
   </head>
   <body>
     <div class="container">
@@ -29,11 +30,30 @@
               </div>
             </div>
           </nav>
-          <div id="content"><a>
-              <h1>VANN.ME</h1></a>
-            <audio controls autoplay>
-              <source src="audio.m4a" type="audio/mpeg">Your browser does not support the audio element.
-            </audio>
+          <div id="content">
+            <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+              <div role="document" class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="r" class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body">
+                    <table class="rps-table">
+                      <tr>
+                        <td>You</td>
+                        <td>Computer</td>
+                      </tr>
+                      <tr>
+                        <td id="a" class="ico"></td>
+                        <td id="b" class="ico"></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group rps"><a><i id="rock" class="fa fa-hand-rock-o"></i></a><a><i id="paper" class="fa fa-hand-paper-o"></i></a><a><i id="scissors" class="fa fa-hand-scissors-o"></i></a></div>
           </div>
         </div>
       </div>
