@@ -90,7 +90,7 @@ h1 {
 
 
 .modal-dialog {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .modal-content {
@@ -99,7 +99,7 @@ h1 {
 
 
 .rps a i {
-    margin: 200px 30px 0 30px;
+    margin: 150px 30px 0 30px;
     font-size: 150px;
     cursor: pointer;
 }
