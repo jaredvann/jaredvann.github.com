@@ -1,0 +1,29 @@
+doctype html
+
+html(lang='en')
+    head
+        meta(charset='utf-8')
+
+        link(rel='stylesheet', href='css/semantic.min.css')
+
+        script(src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.js')
+        link(rel='stylesheet', href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.css')
+
+        title vann.me
+
+    body(style='margin: 0;')
+        .ui.top.fixed.menu(style='background:rgba(255,255,255,0.6);')
+            .header.item VANN.ME
+            .right.menu
+                a.item(href='https://github.com/jaredvann', target='_blank')
+                    i.github.icon
+                    | Github
+                a.item(href='https://twitter.com/jared_vann', target='_blank')
+                    i.twitter.icon
+                    | Twitter
+                a.item(href='https://instagram.com/jrdvnn', target='_blank')
+                    i.instagram.icon
+                    | Instagram
+
+
+        block content
