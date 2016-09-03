@@ -1,0 +1,32 @@
+@import 'https://fonts.googleapis.com/css?family=Monoton';
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Monoton', cursive;
+  background: #eee;
+  color: #ccc;
+}
+nav {
+  margin: 10px 15px;
+}
+nav a {
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+a:hover {
+  color: #bbb;
+}
+h1 {
+  text-align: center;
+  font-size: 12vw;
+  margin-top: 25vh;
+  color: #ddd;
+  transition: all 1s ease-in-out;
+}
+h1:hover {
+  color: #ccc;
+}

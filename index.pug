@@ -1,6 +1,24 @@
-extends layout.pug
+doctype html
 
-block content
-    #map(style='width: 100vw; height: 100vh;')
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title vann.me
 
-    script(src='js/main.js')
+        link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+
+    body
+
+        nav
+            a(href='maps.html')
+                i.fa.fa-map-marker
+            a(href='https://github.com/jaredvann', target='_blank')
+                i.fa.fa-github-square
+            a(href='https://facebook.com/jaredvann', target='_blank')
+                i.fa.fa-facebook-square
+            a(href='https://instagram.com/jrdvnn', target='_blank')
+                i.fa.fa-instagram
+
+        a(href='')
+            h1 VANN.ME
