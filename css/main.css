@@ -13,7 +13,7 @@ a:active {
   text-decoration: none;
 }
 a:hover {
-  color: #bbb;
+  color: #aaa;
 }
 header {
   position: fixed;
@@ -45,8 +45,40 @@ h1.jumbo {
   font-size: 12vw;
   margin-top: 25vh;
   color: #ddd;
-  transition: all 1s ease-in-out;
+  animation: color_change 1s infinite alternate;
 }
 h1.jumbo:hover {
   color: #ccc;
+}
+@-moz-keyframes color_change {
+  from {
+    color: #ccc;
+  }
+  to {
+    color: #ddd;
+  }
+}
+@-webkit-keyframes color_change {
+  from {
+    color: #ccc;
+  }
+  to {
+    color: #ddd;
+  }
+}
+@-o-keyframes color_change {
+  from {
+    color: #ccc;
+  }
+  to {
+    color: #ddd;
+  }
+}
+@keyframes color_change {
+  from {
+    color: #ccc;
+  }
+  to {
+    color: #ddd;
+  }
 }

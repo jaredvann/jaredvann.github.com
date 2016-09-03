@@ -3,7 +3,7 @@
 _bg = #EEE
 _text-dim = #DDD
 _text = #CCC
-_text-highlight = #BBB
+_text-highlight = #AAA
 _text-plus = #AAA
 
 body
@@ -50,7 +50,14 @@ h1.jumbo
     font-size: 12vw
     margin-top: 25vh
     color: _text-dim
-    transition: all 1s ease-in-out
+    // transition: all 1s ease-in-out
 
+    animation: color_change 1s infinite alternate
+
+@keyframes color_change
+    from
+        color: _text
+    to
+        color: _text-dim
 h1.jumbo:hover
     color: _text
