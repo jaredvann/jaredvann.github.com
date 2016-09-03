@@ -2,31 +2,51 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Monoton', cursive;
   background: #eee;
   color: #ccc;
+  font-family: sans-serif;
 }
-nav {
-  margin: 10px 15px;
-}
-nav a {
-  margin-right: 15px;
-  font-size: 1.2em;
-}
-a {
+a,
+a:visited,
+a:active {
   color: #ccc;
   text-decoration: none;
 }
 a:hover {
   color: #bbb;
 }
-h1 {
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  vertical-align: middle;
+  background: #eee;
+  z-index: 10;
+}
+header h1 {
+  float: left;
+  font-family: 'Monoton', sans-serif;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 10px;
+  color: #aaa;
+}
+header nav {
+  float: right;
+  margin: 13px 15px;
+}
+header nav a {
+  margin-left: 15px;
+  font-size: 1.3em;
+}
+h1.jumbo {
+  font-family: 'Monoton', sans-serif;
   text-align: center;
   font-size: 12vw;
   margin-top: 25vh;
   color: #ddd;
   transition: all 1s ease-in-out;
 }
-h1:hover {
+h1.jumbo:hover {
   color: #ccc;
 }

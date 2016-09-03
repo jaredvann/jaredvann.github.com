@@ -1,32 +1,56 @@
 @import 'https://fonts.googleapis.com/css?family=Monoton'
 
+_bg = #EEE
+_text-dim = #DDD
+_text = #CCC
+_text-highlight = #BBB
+_text-plus = #AAA
+
 body
     padding: 0
     margin: 0
-    font-family: 'Monoton', cursive
-    background: #EEE
-    color: #CCC
+    background: _bg
+    color: _text
+    font-family: sans-serif
 
-nav
-    margin: 10px 15px
-
-    a
-        margin-right: 15px
-        font-size: 1.2em
-
-a
-    color: #CCC
+a, a:visited, a:active
+    color: _text
     text-decoration: none
 
 a:hover
-    color: #BBB
+    color: _text-highlight
 
-h1
+header
+    position: fixed
+    top: 0
+    width: 100%
+    vertical-align: middle
+    background: _bg
+    z-index: 10
+
+    h1
+        float: left
+        font-family: 'Monoton', sans-serif
+        font-size: 1.2em
+        padding: 0
+        margin: 10px
+        color: _text-plus
+
+    nav
+        float: right
+        margin: 13px 15px
+
+        a
+            margin-left: 15px
+            font-size: 1.3em
+
+h1.jumbo
+    font-family: 'Monoton', sans-serif
     text-align: center
     font-size: 12vw
     margin-top: 25vh
-    color: #DDD
+    color: _text-dim
     transition: all 1s ease-in-out
 
-h1:hover
-    color: #CCC
+h1.jumbo:hover
+    color: _text
