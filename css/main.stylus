@@ -25,7 +25,7 @@ header
     top: 0
     width: 100%
     vertical-align: middle
-    background: _bg
+    background: rgba(238,238,238, 0.8)
     z-index: 10
 
     h1
