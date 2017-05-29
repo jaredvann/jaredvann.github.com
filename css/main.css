@@ -3,24 +3,28 @@ body {
   padding: 0;
   margin: 0;
   background: #eee;
-  color: #ccc;
+  color: #fff;
   font-family: sans-serif;
+  background: url('../img/hills.jpg') no-repeat bottom center fixed;
+  background-size: cover;
+  background-repeat: repeat/*-x;
+  background-position: fix*/ed;
 }
 a,
 a:visited,
 a:active {
-  color: #ccc;
+  color: #ebebeb;
   text-decoration: none;
 }
 a:hover {
-  color: #aaa;
+  color: pink;
 }
 header {
   position: fixed;
   top: 0;
   width: 100%;
   vertical-align: middle;
-  background: rgba(238,238,238,0.8);
+  /*background: rgba(238,238,238,0.8);*/
   z-index: 10;
 }
 header h1 {
@@ -29,7 +33,7 @@ header h1 {
   font-size: 1.2em;
   padding: 0;
   margin: 10px;
-  color: #aaa;
+  color: #ebebeb;
 }
 header nav {
   float: right;
@@ -44,41 +48,7 @@ h1.jumbo {
   text-align: center;
   font-size: 12vw;
   margin-top: 25vh;
-  color: #ddd;
+  color: #ebebeb;
   animation: color_change 1s infinite alternate;
 }
-h1.jumbo:hover {
-  color: #ccc;
-}
-@-moz-keyframes color_change {
-  from {
-    color: #ccc;
-  }
-  to {
-    color: #ddd;
-  }
-}
-@-webkit-keyframes color_change {
-  from {
-    color: #ccc;
-  }
-  to {
-    color: #ddd;
-  }
-}
-@-o-keyframes color_change {
-  from {
-    color: #ccc;
-  }
-  to {
-    color: #ddd;
-  }
-}
-@keyframes color_change {
-  from {
-    color: #ccc;
-  }
-  to {
-    color: #ddd;
-  }
-}
+
